@@ -1,5 +1,4 @@
 import sys
-
 if len(sys.argv) == 6:
     # User provided values
     script_name = sys.argv[0]
@@ -19,9 +18,14 @@ else:
     sub_3 = 65
     sub_4 = 76
     sub_5 = 50
-  print("No input given - using default values:")
+
+    print("No input given - using default values:")
+
+# Calculate average
 avg = (sub_1 + sub_2 + sub_3 + sub_4 + sub_5) / 5
 print("Average marks is:", avg)
+
+# Grade calculation
 if avg >= 80:
     grade = "A"
 elif avg >= 70:
